@@ -1,0 +1,16 @@
+const STATUS_CODES = {
+    OK : 200,
+    INTERNAL_SERVER_ERROR : 500,
+    CREATED : 201,
+    UNAUTHORIZED : 401 , 
+    NOT_FOUND : 404,
+    BAD_REQUEST : 400,
+    FORBBIDEN : 403,
+    UNPROCESSABEL_ENTITY : 422 ,
+    GONE : 410,
+    PAYMENT_REQIRED : 402
+}
+
+module.exports = {
+    STATUS_CODES
+}

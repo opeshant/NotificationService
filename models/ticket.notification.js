@@ -19,9 +19,11 @@ const ticketNotificationSchema = new mongoose.Schema({
             values : ["SUCCESS" , "FAILED" ,"PENDING"],
             message : "invalid ticket status"
         },
+        deafult : "PENDING",
         required : true
 
     },
+
 
 },{timestamps : true});
 

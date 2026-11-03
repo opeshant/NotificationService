@@ -4,12 +4,16 @@ const env = require('dotenv');
 const mongoose = require('mongoose');
 
 const sendMail = require('./services/email.service');
-
 const app = express();
+
+
+const ticketRoutes = require('./routes/ticket.routes');
 
 env.config();
 app.use(bodyParser);
 app.use(bodyParser.urlencoded({extended : true}));
+
+ticketRoutes(app); // invoking the routes
 
 
 
